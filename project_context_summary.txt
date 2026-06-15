@@ -1,0 +1,67 @@
+========================================================================
+PROJECT CONTEXT SUMMARY — HARSHIL BAROT PORTFOLIO & CASE STUDY
+========================================================================
+
+1. OVERVIEW
+------------------------------------------------------------------------
+This project is a premium, interactive developer portfolio for Harshil Barot
+(UI/UX Designer & Frontend Developer). Rather than displaying generic projects,
+it showcases a detailed scroll-driven storytelling narrative of his signature
+real-world project: the GauVardhan Feed E-Commerce Platform (silagedirect).
+
+- Active Directory: C:\Users\Harshil Rao\.gemini\antigravity\scratch\harshil-portfolio
+- Target Audience: Clients/recruiters looking for UI/UX & frontend work
+- Main Stack: Pure Semantic HTML5, CSS3 Variables, Vanilla JS (ES Modules)
+- Interactive Stack: GSAP, GSAP ScrollTrigger, GSAP CustomEase
+
+2. DESIGN & CORE CONFIGURATIONS
+------------------------------------------------------------------------
+- Palette: HSL dark themed variables (--bg: #060608, --surf: #0e0e12,
+  --acid: #c8f135 [neon/lime accent], --coral: #ff4d2e, --lav: #b8a4ff)
+- Typography: 'Bebas Neue' (headings), 'Instrument Serif' (italic accent text),
+  and 'DM Sans' (body copy)
+- Interactive Elements: Custom lagging mouse ring cursor, mouse hover
+  expanding state, magnetic hello button CTA, background floating mouse blobs
+- Hero Section: Real-time dynamic canvas particle-network animations
+- Navigation: Header status light (available for work), auto-blur on scroll
+
+3. THE FEATURED PROJECT: GAUVARDHAN FEED (SILAGEDIRECT)
+------------------------------------------------------------------------
+A localized e-commerce site delivering premium maize silage bales to dairy
+farmers across rural Gujarat and Rajasthan.
+- Constraints: Built around rural 2G/3G mobile networks, entry-level mobile
+  devices, multilingual users, and zero payment-gateway familiarity.
+- Core Optimization: Choosing zero frameworks (No React/Next) to keep the core
+  bundle at just 14KB. Fast loading, skeleton loader perception states,
+  WebP image conversions (80% weight reduction).
+
+Horizontal Scroll Storytelling Panels (GSAP Pinning):
+- Slide 01: The Mission & Rural 2G/3G connectivity challenges.
+- Slide 02: Framework-less architecture decision (14KB bundle vs heavy react).
+- Slide 03: i18n dynamic EN/HI/GU local translator & dynamic Admin Panel.
+- Slide 04: Engineering debug cases (Silent WhatsApp order fixes, network
+  data loss prevention, and dynamic Firestore sync).
+- Slide 05: Real-world impact metrics card grid.
+
+4. PROBLEM-SOLVING EXAMPLES (IMPLEMENTED IN SLIDE 4 ACCORDION)
+------------------------------------------------------------------------
+A) Silent WhatsApp checkout failures:
+   - Problem: Async Firestore updates delayed the WhatsApp redirect, triggering
+     browser popup blockers and leaving farmers stuck.
+   - Solution: Built WhatsApp redirect URL synchronously at click-time, opening
+     the redirection page instantly while processing Firebase writes in the background.
+B) Form data loss on slow networks:
+   - Problem: Inconsistent 2G/3G connections dropped checkout forms.
+   - Solution: Implemented local storage form caching, error validation messages,
+     and enforced cart Minimum Order Quantities (12 bales Pro-100) directly in the UI.
+C) Code-free Admin updates:
+   - Problem: Stock quotas and prices fluctuate weekly and required developer code changes.
+   - Solution: Synced settings using Firestore collections with local hardcoded fallbacks
+     to preserve site availability in case of offline states.
+
+5. DIRECTORY STRUCTURE
+------------------------------------------------------------------------
+- /index.html : Root document holding nav, loading screens, and slides.
+- /style.css  : Color tokens, 3D card tilt rules, custom cursor, and responsive stacking.
+- /main.js    : Canvas particles, GSAP ScrollTrigger timeline, and accordion listeners.
+========================================================================

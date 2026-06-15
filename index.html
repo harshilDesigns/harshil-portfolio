@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshil Barot — UI/UX & Frontend Developer</title>
+<meta name="description" content="Harshil Barot — UI/UX Designer & Frontend Developer. Portfolio featuring the GauVardhan Feed e-commerce case study with GSAP storytelling.">
+<meta property="og:title" content="Harshil Barot — UI/UX & Frontend Developer">
+<meta property="og:description" content="Premium interactive portfolio showcasing real-world UX engineering and frontend development work.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<meta property="og:image" content="og-cover.jpg">
+<meta name="twitter:image" content="og-cover.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="noise-overlay"></div>
+
+<div id="loader">
+  <div id="lcount">0</div>
+  <div class="ltrack"><div id="lfill"></div></div>
+  <div class="llabel">Loading Portfolio</div>
+</div>
+
+<div id="cdot"></div>
+<div id="cring"></div>
+<div id="prog"></div>
+<div class="ssbar"><div id="ssfill"></div></div>
+
+<nav id="mainnav">
+  <a href="#" class="nlogo">HB.</a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#case-study-showcase">Featured Work</a></li>
+    <li><a href="#roadmap">Path</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="navail"><span class="nd"></span>Available for work</div>
+</nav>
+
+<main>
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <canvas id="pcanvas"></canvas>
+  <div class="hgrid"></div>
+  <div class="blobs">
+    <div class="blob b1" id="bl1"></div>
+    <div class="blob b2" id="bl2"></div>
+    <div class="blob b3" id="bl3"></div>
+  </div>
+
+  <div class="heyebrow" id="eyebrow">
+    <span class="nd"></span> Available · India · Open to Remote
+  </div>
+
+  <h1 class="htitle" id="htitle">
+    <span class="ln"><span class="wd" id="w1">HARSHIL</span></span>
+    <span class="ln"><span class="wd outline" id="w2">BAROT</span></span>
+  </h1>
+
+  <div class="hbottom" id="hbottom">
+    <p class="hrole">UI/UX Designer &amp;<br>Frontend Developer</p>
+    <div class="hscroll"><div class="hscrollline"></div>Scroll to explore</div>
+  </div>
+
+  <div class="tkwrap">
+    <div class="tk">
+      <span class="tki">UI Design</span><span class="tki g">✦</span>
+      <span class="tki">UX Research</span><span class="tki g">✦</span>
+      <span class="tki">Frontend Dev</span><span class="tki g">✦</span>
+      <span class="tki">Figma</span><span class="tki g">✦</span>
+      <span class="tki">Firebase</span><span class="tki g">✦</span>
+      <span class="tki">Mobile Performance</span><span class="tki g">✦</span>
+      <span class="tki">Design Systems</span><span class="tki g">✦</span>
+      <span class="tki">GSAP</span><span class="tki g">✦</span>
+      <span class="tki">UI Design</span><span class="tki g">✦</span>
+      <span class="tki">UX Research</span><span class="tki g">✦</span>
+      <span class="tki">Frontend Dev</span><span class="tki g">✦</span>
+      <span class="tki">Figma</span><span class="tki g">✦</span>
+      <span class="tki">Firebase</span><span class="tki g">✦</span>
+      <span class="tki">Mobile Performance</span><span class="tki g">✦</span>
+      <span class="tki">Design Systems</span><span class="tki g">✦</span>
+      <span class="tki">GSAP</span><span class="tki g">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="aleft">
+    <div class="abig">100%</div>
+    <div class="atag reveal" id="atag">About Me</div>
+    <h2 class="ahead reveal" id="ahead">
+      <span class="w"><span class="wi">WHERE</span></span>
+      <span class="w"><span class="wi">DESIGN</span></span>
+      <span class="w"><span class="wi">MEETS</span></span>
+      <span class="w"><span class="wi">CODE.</span></span>
+    </h2>
+  </div>
+  <div class="aright" id="aright">
+    <p>I'm Harshil Barot — a frontend developer and UI/UX designer based in Mehsana, Gujarat. I specialize in building high-performance, accessible applications designed around the real-world constraints of everyday users.</p>
+    <p>From wireframing responsive layouts in Figma to implementing zero-framework Vanilla JS logic and Firestore architectures, I combine design thinking with production-grade code to solve actual business challenges.</p>
+    <div class="hw-wrap">
+      <span class="hw-bg-word">GROWING</span>
+      <div class="hw-line" id="hwl1">
+        <span class="hw-text">broke a lot of things.</span>
+        <span class="hw-underline"></span>
+      </div>
+      <div class="hw-line" id="hwl2">
+        <span class="hw-text">fixed even more.</span>
+        <span class="hw-underline"></span>
+      </div>
+      <div class="hw-line" id="hwl3">
+        <span class="hw-text">still going.</span>
+        <span class="hw-underline"></span>
+        <span class="hw-cursor">|</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED WORK STORYTELLING (HORIZONTAL SCROLL) ══ -->
+<section id="case-study-showcase">
+  <div class="cs-pin-container" id="cs-container">
+    
+    <!-- Slide 1: Mission & Constraints -->
+    <div class="cs-panel" id="cs-panel-1">
+      <div class="panel-bg-num">01</div>
+      <div class="panel-content">
+        <div class="cs-left">
+          <div class="cs-eyebrow"><span class="nd"></span>Featured Project</div>
+          <h2 class="cs-title">GauVardhan Feed<br><em>E-Commerce</em></h2>
+          <p class="cs-desc">Building a production-ready, localized e-commerce experience for GauVardhan Feed (Gokul Biotech), delivering premium maize silage bales to dairy farmers across rural Gujarat and Rajasthan.</p>
+          <div class="cs-tag-container">
+            <span class="cs-tag">UI/UX Design</span>
+            <span class="cs-tag">Vanilla JS</span>
+            <span class="cs-tag">Firebase</span>
+            <span class="cs-tag">Low-Bandwidth Optimization</span>
+          </div>
+        </div>
+        <div class="cs-right">
+          <div class="highlight-box">
+            <h4>The Challenge</h4>
+            <p>Target users are rural dairy farmers accessing the web on slow, inconsistent 2G/3G mobile networks. Heavy framework bundles or slow checkouts cause users to drop off immediately.</p>
+          </div>
+          <ul class="spec-list">
+            <li>Designed mobile-first around rural constraints</li>
+            <li>Replaced credit card gateways with WhatsApp-first ordering</li>
+            <li>Enforced Minimum Order Quantities (MOQ) at UI level</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Technical Architecture -->
+    <div class="cs-panel" id="cs-panel-2">
+      <div class="panel-bg-num">02</div>
+      <div class="panel-content">
+        <div class="cs-left">
+          <div class="cs-eyebrow">Zero-Framework Stack</div>
+          <h2 class="cs-title">14KB Core Bundle<br><em>Performance-First</em></h2>
+          <p class="cs-desc">To combat low signal quality in rural regions, I deliberately avoided heavy frameworks (React/Next) and built the platform using pure semantic HTML, CSS, and Vanilla JS ES Modules.</p>
+          <div class="cs-tag-container">
+            <span class="cs-tag">Zero Bloat</span>
+            <span class="cs-tag">ES Modules</span>
+            <span class="cs-tag">Netlify CI/CD</span>
+            <span class="cs-tag">Skeleton Loaders</span>
+          </div>
+        </div>
+        <div class="cs-right" style="padding: 24px; display: flex; align-items: center; justify-content: center;">
+          <canvas id="arch-canvas" width="560" height="320" style="width: 100%; height: auto; max-width: 100%; display: block;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Multi-Language & Custom Admin -->
+    <div class="cs-panel" id="cs-panel-3">
+      <div class="panel-bg-num">03</div>
+      <div class="panel-content">
+        <div class="cs-left">
+          <div class="cs-eyebrow">User Localization & Management</div>
+          <h2 class="cs-title">EN / HI / GU Engine<br><em>& Admin Panel</em></h2>
+          <p class="cs-desc">Designed an in-house localization engine managing over 500 translation keys. Farmers can toggle languages instantly. Built a real-time Firestore database dashboard for operations management.</p>
+          <div class="cs-tag-container">
+            <span class="cs-tag">i18n Translation</span>
+            <span class="cs-tag">Figma Prototyping</span>
+            <span class="cs-tag">Firestore Real-time Sync</span>
+            <span class="cs-tag">State Persistence</span>
+          </div>
+        </div>
+        <div class="cs-right">
+          <div class="highlight-box">
+            <h4>Operations Control</h4>
+            <p>Designed and built a custom admin dashboard where business operations staff can dynamically update bale prices, adjust inventory limits, and track active harvests without writing code.</p>
+          </div>
+          <ul class="spec-list">
+            <li>Persisted client-side language preferences via localStorage</li>
+            <li>Real-time order statuses (Pending / Confirmed / Delivered)</li>
+            <li>Search and filter by client name, status, or phone number</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Problem-Solving Case Studies -->
+    <div class="cs-panel" id="cs-panel-4">
+      <div class="panel-bg-num">04</div>
+      <div class="panel-content">
+        <div class="cs-left">
+          <div class="cs-eyebrow">Engineering Breakthroughs</div>
+          <h2 class="cs-title">Overcoming Real<br><em>Bugs & Constraints</em></h2>
+          <p class="cs-desc">Great engineering is defined by how we solve real issues. Here is how I diagnosed and debugged critical performance blockers on the GauVardhan platform.</p>
+          <div class="cs-tag-container">
+            <span class="cs-tag">Debugging</span>
+            <span class="cs-tag">Sync vs Async UI</span>
+            <span class="cs-tag">Caching Fallbacks</span>
+            <span class="cs-tag">Order Validation</span>
+          </div>
+        </div>
+        <div class="cs-right">
+          <div class="prob-accordion">
+            
+            <div class="acc-item active" data-index="0">
+              <div class="acc-head">
+                <span class="acc-title">1. Silent Order Failures & Redirect Blocks</span>
+                <span class="acc-icon">＋</span>
+              </div>
+              <div class="acc-body" style="height:auto;">
+                <div class="acc-content">
+                  <strong>The Problem:</strong> Async Firestore calls delayed WhatsApp page redirection, triggering browser popup-blockers and leaving farmers stuck on "Placing order...".<br>
+                  <strong>The Solution:</strong> Restructured checkout to build the WhatsApp redirect URL synchronously at click-time, spawning the checkout window immediately while completing Firestore updates asynchronously in the background.
+                </div>
+              </div>
+            </div>
+
+            <div class="acc-item" data-index="1">
+              <div class="acc-head">
+                <span class="acc-title">2. Data Loss on Intermittent Signals</span>
+                <span class="acc-icon">＋</span>
+              </div>
+              <div class="acc-body">
+                <div class="acc-content">
+                  <strong>The Problem:</strong> Sudden drops in rural network connections wiped form data on checkout retry, leading to cart abandonment.<br>
+                  <strong>The Solution:</strong> Implemented local storage form caching, clear input validation rules with error prompts, and enforced business logic minimum quantities (e.g. 12 bales Pro-100) directly in the UI.
+                </div>
+              </div>
+            </div>
+
+            <div class="acc-item" data-index="2">
+              <div class="acc-head">
+                <span class="acc-title">3. Code-Free Admin Price Management</span>
+                <span class="acc-icon">＋</span>
+              </div>
+              <div class="acc-body">
+                <div class="acc-content">
+                  <strong>The Problem:</strong> Prices and stock limits fluctuated weekly. Changing these required direct code updates and redeploying the site.<br>
+                  <strong>The Solution:</strong> Configured a Firestore settings database matching stock/prices. Built an admin interface to push changes in real-time, with hardcoded local fallback files in case of db disconnections.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Performance & Results -->
+    <div class="cs-panel" id="cs-panel-5">
+      <div class="panel-bg-num">05</div>
+      <div class="panel-content">
+        <div class="cs-left">
+          <div class="cs-eyebrow">The Business Impact</div>
+          <h2 class="cs-title">Validating Performance<br><em>and Demand</em></h2>
+          <p class="cs-desc">By prioritizing mobile optimization, localization, and direct communication integrations, the GauVardhan platform successfully established product-market validation.</p>
+          <div class="cs-tag-container">
+            <span class="cs-tag">Market Validation</span>
+            <span class="cs-tag">Lighthouse Verification</span>
+            <span class="cs-tag">Rural Deployment</span>
+            <span class="cs-tag">E-Commerce ROI</span>
+          </div>
+        </div>
+        <div class="cs-right">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="mc-val">80%</div>
+              <div class="mc-label">Image Weight Saved</div>
+            </div>
+            <div class="metric-card">
+              <div class="mc-val">₹27k</div>
+              <div class="mc-label">Test Orders Placed</div>
+            </div>
+            <div class="metric-card">
+              <div class="mc-val">&lt;3s</div>
+              <div class="mc-label">Load Time on 3G</div>
+            </div>
+            <div class="metric-card">
+              <div class="mc-val">98</div>
+              <div class="mc-label">Lighthouse Score</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ LEARNING ROADMAP ══ -->
+<section id="roadmap">
+  <p class="ctlabel">Next Horizons</p>
+  <h2 class="cthead" style="margin-bottom:0">
+    <span class="w"><span class="wi">WHAT I'M <em>LEARNING</em></span></span>
+    <span class="w"><span class="wi">AND BUILDING NEXT.</span></span>
+  </h2>
+  
+  <div class="rm-cards">
+    <div class="rm-card reveal">
+      <span class="rm-num">01</span>
+      <span class="rm-icon">◈</span>
+      <h3 class="rm-title">React / Next.js</h3>
+      <p class="rm-desc">Expanding from raw JS modules to component-driven design for building scalable, server-rendered application dashboards.</p>
+    </div>
+    <div class="rm-card reveal">
+      <span class="rm-num">02</span>
+      <span class="rm-icon">◈</span>
+      <h3 class="rm-title">Firebase Auth</h3>
+      <p class="rm-desc">Setting up robust authentication rules, user sign-in structures, and secure dashboard endpoints for future apps.</p>
+    </div>
+    <div class="rm-card reveal">
+      <span class="rm-num">03</span>
+      <span class="rm-icon">◈</span>
+      <h3 class="rm-title">Advanced SQL</h3>
+      <p class="rm-desc">Learning relational database structures, complex queries, and data normalization to expand backend development reach.</p>
+    </div>
+    <div class="rm-card reveal">
+      <span class="rm-num">04</span>
+      <span class="rm-icon">◈</span>
+      <h3 class="rm-title">Design Systems</h3>
+      <p class="rm-desc">Bridging UI component design in Figma with interactive code variables, ensuring consistent branding across multi-device applications.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS MARQUEE ══ -->
+<div class="reveal" id="skills">
+  <div class="skrow skrow1">
+    <div class="skpill"><span class="ski">✦</span>Figma</div>
+    <div class="skpill"><span class="ski">✦</span>Vanilla JavaScript</div>
+    <div class="skpill"><span class="ski">✦</span>Firebase Firestore</div>
+    <div class="skpill"><span class="ski">✦</span>i18n Translation</div>
+    <div class="skpill"><span class="ski">✦</span>Responsive Layouts</div>
+    <div class="skpill"><span class="ski">✦</span>Netlify Deployment</div>
+    <div class="skpill"><span class="ski">✦</span>Performance Optimization</div>
+    <div class="skpill"><span class="ski">✦</span>Git & GitHub</div>
+    <div class="skpill"><span class="ski">✦</span>Figma</div>
+    <div class="skpill"><span class="ski">✦</span>Vanilla JavaScript</div>
+    <div class="skpill"><span class="ski">✦</span>Firebase Firestore</div>
+    <div class="skpill"><span class="ski">✦</span>i18n Translation</div>
+  </div>
+  <div class="skrow skrow2">
+    <div class="skpill"><span class="ski">◈</span>UX Research</div>
+    <div class="skpill"><span class="ski">◈</span>Mobile-First Design</div>
+    <div class="skpill"><span class="ski">◈</span>Figma Prototyping</div>
+    <div class="skpill"><span class="ski">◈</span>WebP Conversions</div>
+    <div class="skpill"><span class="ski">◈</span>Skeleton Loading</div>
+    <div class="skpill"><span class="ski">◈</span>LocalStorage Caching</div>
+    <div class="skpill"><span class="ski">◈</span>CSS Flexbox & Grid</div>
+    <div class="skpill"><span class="ski">◈</span>Chrome DevTools</div>
+    <div class="skpill"><span class="ski">◈</span>UX Research</div>
+    <div class="skpill"><span class="ski">◈</span>Mobile-First Design</div>
+    <div class="skpill"><span class="ski">◈</span>Figma Prototyping</div>
+    <div class="skpill"><span class="ski">◈</span>WebP Conversions</div>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="ctghost">HELLO</div>
+    <p class="ctlabel reveal" id="ctlabel">Let's Collaborate</p>
+    <h2 class="cthead reveal" id="cthead">
+    <span class="w"><span class="wi">GOT AN <em>IDEA?</em></span></span>
+    <span class="w"><span class="wi">LET'S BUILD IT.</span></span>
+  </h2>
+  <p class="ctsub reveal" id="ctsub">Open to full-time junior positions, freelance projects, and creative collaborations. Let's make something unforgettable.</p>
+  <div class="magwrap reveal" id="magwrap">
+    <a href="mailto:harshilbarot667@gmail.com" class="ctbtn" id="ctbtn">Say Hello ✦</a>
+  </div>
+  <div class="ctsocs">
+    <a href="https://github.com/harshilDesigns" target="_blank" rel="noopener noreferrer" class="ctsoc">GitHub</a>
+    <a href="https://silagedirect.in" target="_blank" rel="noopener noreferrer" class="ctsoc">Live Site</a>
+    <a href="mailto:harshilbarot667@gmail.com" class="ctsoc">Email</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Harshil Barot</span>
+  <span style="color:var(--acid)">Designed & Built with ✦</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+<script src="main.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('Service Worker registered.'))
+      .catch(err => console.log('Service Worker registration failed:', err));
+  });
+}
+</script>
+</body>
+</html>
